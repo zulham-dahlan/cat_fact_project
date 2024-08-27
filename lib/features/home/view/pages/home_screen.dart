@@ -1,6 +1,7 @@
 import 'package:cat_fact/features/home/controller/cat_facts_controller.dart';
 import 'package:cat_fact/features/home/model/cat_fact_model.dart';
 import 'package:cat_fact/features/login/model/user_model.dart';
+import 'package:cat_fact/features/logout/view/widget/button_logout.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,6 +32,7 @@ class HomeScreen extends StatelessWidget {
             maxLines: 1,
           ),
         ),
+        actions: [ButtonLogout()],
       ),
       body: catFactsController.obx(
           (state) => RefreshIndicator(
