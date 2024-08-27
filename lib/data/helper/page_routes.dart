@@ -5,6 +5,6 @@ import 'package:get/get.dart';
 
 final routes = [
   GetPage(name: SplashScreen.routeName, page: () => const SplashScreen()),
-  GetPage(name: HomeScreen.routeName, page: () => const HomeScreen()),
+  GetPage(name: HomeScreen.routeName, page: () => HomeScreen()),
   GetPage(name: LoginScreen.routeName, page: () => const LoginScreen())
 ];

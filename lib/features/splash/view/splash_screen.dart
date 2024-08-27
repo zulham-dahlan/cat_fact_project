@@ -11,13 +11,9 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(SplashController());
     return Scaffold(
-      body: Center(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 32),
-            child: Lottie.asset(
-                  "lottie/loading_cat.json",
-                ),
-          )),
-    );
+        body: Center(
+      child: Lottie.asset("lottie/loading_cat.json",
+          width: MediaQuery.of(context).size.width / 2),
+    ));
   }
 }
