@@ -1,4 +1,6 @@
+import 'package:cat_fact/features/login/model/user_model.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,9 +8,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final UserModel user = Get.find<UserModel>();
+
+    return Scaffold(
       body: Center(
-        child: Text("Home"),
+        child: Text(user.username),
       ),
     );
   }
