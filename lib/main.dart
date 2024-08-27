@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Cat Fact',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Poppins',
+      ),
       initialRoute: SplashScreen.routeName,
       getPages: routes,
     );
